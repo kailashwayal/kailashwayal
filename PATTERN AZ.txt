@@ -17,6 +17,16 @@ for row in range(1,n+1):
 *           * 
 *           *
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+
+
+
+
+
+
+
+
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -34,6 +44,12 @@ for row in range(1,n+1):
 *           * 
 * * * * * * 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII  
+
+
+
+
+
+
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -52,6 +68,15 @@ for row in range(1,n+1):
 * * * * * * * 
 
 IIIIIIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+
+
+
+
+
+
+
+
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -69,6 +94,16 @@ for row in range(1,n+1):
   *         * 
 * * * * * *  
 OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO00000000000000000000000000000000 
+
+
+
+
+
+
+
+
+
+
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -86,6 +121,13 @@ for row in range(1,n+1):
 *             
 * * * * * * * 
 0000000000000000000000000000000000000000000000000000000000000
+
+
+
+
+
+
+
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -102,6 +144,13 @@ for row in range(1,n+1):
 *             
 *             
 00000000000000000000000000000000000000000000000000000000000000000
+
+
+
+
+
+
+
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -119,6 +168,14 @@ for row in range(1,n+1):
 *           * 
 * * * * * * * 
 00000000000000000000000000000000000000000000000000
+
+
+
+
+
+
+
+
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -136,6 +193,11 @@ for row in range(1,n+1):
 *           * 
 *           * 
 0000000000000000000000000000000000
+
+
+
+
+
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -151,6 +213,12 @@ for row in range(1,n+1):
       *       
       *       
 * * * * * * * 
+
+
+
+
+
+
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -166,6 +234,8 @@ for row in range(1,n+1):
 *     *       
 *     *       
 * * * *       
+
+
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -182,7 +252,10 @@ for row in range(1,n+1):
 *     *       
 *     *       
   * *  
-00000000000000000000000000000000000000000000000000000000000000000000000       
+00000000000000000000000000000000000000000000000000000000000000000000000    
+
+
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -198,6 +271,9 @@ for row in range(1,n+1):
       * *     
       *   *   
       *     * 
+      
+      
+      
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -206,13 +282,18 @@ for row in range(1,n+1):
         else:
             print(" ",end=" ")
     print()
+    
 *     *       
 *   *         
 * *           
 *             
 * *           
 *   *         
-*     *       
+*     *  
+
+
+.........................................................................
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -228,6 +309,7 @@ for row in range(1,n+1):
 *             
 *             
 * * * * * * * 
+........................................................................
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -236,6 +318,7 @@ for row in range(1,n+1):
         else:
             print(" ",end=" ")
     print()
+    
 * * * * * *   
 *         *   
 *         *   
@@ -243,6 +326,7 @@ for row in range(1,n+1):
 *       * *   
 * * * * * *   
             * 
+            ................................................................
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -258,6 +342,9 @@ for row in range(1,n+1):
 *           * 
 *           * 
 *           * 
+...................................................
+
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -266,6 +353,7 @@ for row in range(1,n+1):
         else:
             print(" ",end=" ")
     print()
+    
 *           * 
 * *         * 
 *   *       * 
@@ -273,6 +361,7 @@ for row in range(1,n+1):
 *       *   * 
 *         * * 
 *           * 
+...............................................................
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -281,6 +370,9 @@ for row in range(1,n+1):
         else:
             print(" ",end=" ")
     print()
+    
+   
+    
 * * * * * * * 
 *           * 
 *           * 
@@ -288,6 +380,10 @@ for row in range(1,n+1):
 *           * 
 *           * 
 * * * * * * * 
+............................................................
+
+
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -296,6 +392,7 @@ for row in range(1,n+1):
         else:
             print(" ",end=" ")
     print()
+    
   * * * * *   
 *           * 
 *           * 
@@ -303,6 +400,8 @@ for row in range(1,n+1):
 *           * 
 *           * 
   * * * * *   
+...............................................................
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -311,13 +410,17 @@ for row in range(1,n+1):
         else:
             print(" ",end=" ")
     print()
+    
 * * * * * * * 
 *           * 
 *           * 
 * * * * * * * 
 *             
 *             
-*             
+* 
+.....................................................
+
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -332,7 +435,10 @@ for row in range(1,n+1):
 * * * * * *   
 *             
 *             
-*             
+*       
+........................................................
+
+
 'if (col==0 or col==4) and (row>0 and row<6) or (row==0 or row==6) and (col>0 and col<4) or( row==5 and col==2) or (col==4 and row==7)'
 n=7
 for row in range(8):
@@ -349,7 +455,9 @@ for row in range(8):
 *       *       
 *   *   *       
   * * *         
-        *       
+        *   
+  .........................................................
+  
 n=7 
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -365,7 +473,8 @@ for row in range(1,n+1):
 *           * 
 *           * 
   * * * * *   
- 
+.................................................
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -381,6 +490,7 @@ for row in range(1,n+1):
 *       *     
 *         *   
 *           * 
+.....................................................
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -396,6 +506,7 @@ for row in range(1,n+1):
 *       *     
 *         *   
 *           * 
+...............................................
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -411,6 +522,7 @@ for row in range(1,n+1):
             * 
             * 
 * * * * * * * 
+.......................................................
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -489,6 +601,8 @@ for row in range(1,n+1):
     *   *     
   *       *   
 *           * 
+............................................
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -497,13 +611,15 @@ for row in range(1,n+1):
         else:
             print(" ",end=" ")
     print()
+    
 *           * 
   *       *   
     *   *     
       *       
       *       
       *       
-      *       
+      *      ...........................................
+      
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -519,6 +635,7 @@ for row in range(1,n+1):
     *         
   *           
 * * * * * * * 
+...............................................
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -565,6 +682,11 @@ for row in range(1,n+1):
 *   *   *   * 
 * *       * * 
 * * * * * * * 
+
+
+
+
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -580,6 +702,18 @@ for row in range(1,n+1):
 *   *   *   * 
 * *       * * 
 * * * * * * * 
+
+
+
+
+
+
+
+
+
+
+
+
 n=9
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -597,6 +731,15 @@ for row in range(1,n+1):
 *   *   *   *   * 
 * *     *     * * 
 * * * * * * * * * 
+
+
+
+
+
+
+
+
+
 n=9
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -631,6 +774,10 @@ for row in range(1,n+1):
                   
                   
 *               * 
+
+
+
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
@@ -646,6 +793,10 @@ for row in range(1,n+1):
               
               
 *     *     * 
+
+
+
+
 n=7
 for row in range(1,n+1):
     for col in range(1,n+1):
