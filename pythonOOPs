@@ -1,0 +1,37 @@
+class Bank:
+    b_name='KOTAK'
+    Reg_no=23441
+    MBL='Aurangabad'
+    def __init__(self,name,address,aadhar,bal,password):
+        self.name=name
+        self.address=address
+        self.aadhar=aadhar
+        self.bal=bal
+        self.password=password
+    
+    def display(self):
+        print('''name is {0} address is {1} aadhar no is {2} bal is {3} password is {4}'''.format(self.name,self.address,self.aadhar,self.bal,self.password))
+        
+        
+    def withdraw(self):
+        pwd=int(input('enter the password'.format(self.password)))
+        amt=int(input('Enter the amount '))
+        
+        if pwd==self.password:
+           
+            if amt>self.bal:
+                print("enter the proper amount.{0} take tablets and come back".format(self.name))
+            else:
+                self.bal-=amt
+                print('collect your money')
+                print("New bal is", self.bal)
+        else:
+            print('incorrect password')
+Mufeed=Bank("Mufeed","Malegaon",8767464677,50000,123123)
+Mufeed.display()
+Mufeed.withdraw()
+
+Nilesh=Bank("Nilesh","Abad",8767464688,100000,121121)
+Nilesh.display()
+Nilesh.withdraw()
+    
