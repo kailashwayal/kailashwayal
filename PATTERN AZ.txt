@@ -1,0 +1,725 @@
+A to Z patterns
+
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if (col in (1,n) and row!=1) or (row==1 and col not in (1,n)) or row==n//2+1 :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+  * * * * *   
+*           * 
+*           * 
+* * * * * * * 
+*           * 
+*           * 
+*           *
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if (row in (1,n) and col!=n) or (col in (1,n) and row not in (1,n) or row==n//2+1) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+* * * * * *   
+*           * 
+*           * 
+* * * * * * * 
+*           * 
+*           * 
+* * * * * * 
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII  
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or col==1 :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+* * * * * * * 
+*             
+*             
+*             
+*             
+*             
+* * * * * * * 
+
+IIIIIIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        # if (row in (1,n) and col!=n) or (col in (2,n) and row not in (1,n)) :
+        if  col==2 or (col==n and row!=1 and row!=n) or (row==1 and col!=n) or (row==n and col!=n) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * *   
+  *         * 
+  *         * 
+  *         * 
+  *         * 
+  *         * 
+* * * * * *  
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO00000000000000000000000000000000 
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or col==1 or (row==n//2+1 and row>=col-1) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+* * * * * * * 
+*             
+*             
+* * * * *     
+*             
+*             
+* * * * * * * 
+0000000000000000000000000000000000000000000000000000000000000
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row==1 or col==1 or (row==n//2+1 and row>=col-1) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+*             
+*             
+* * * * *     
+*             
+*             
+*             
+00000000000000000000000000000000000000000000000000000000000000000
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if (row==1 and col!=1 or row==n ) or (row>=n//2+1 and col==n) or (col==1 and row!=1) or (col>=n//2+1 and row==n//2+1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+  * * * * * * 
+*             
+*             
+*     * * * * 
+*           * 
+*           * 
+* * * * * * * 
+00000000000000000000000000000000000000000000000000
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row==n//2+1 or col in (1,n) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+*           * 
+*           * 
+*           * 
+* * * * * * * 
+*           * 
+*           * 
+*           * 
+0000000000000000000000000000000000
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or col==n//2+1 :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+      *       
+      *       
+      *       
+      *       
+      *       
+* * * * * * * 
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row==1 or (row==n and col<=n//2+1) or (col==1 and row>=n//2+2) or (col==n//2+1) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+      *       
+      *       
+      *       
+*     *       
+*     *       
+* * * *       
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row==1 or (col==1 and row>=n//2+2 and row!=n) or (col==n//2+1 and row!=n) or (row==n and col<=n//2 and col!=1) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+* * * * * * * 
+      *       
+      *       
+      *       
+*     *       
+*     *       
+  * *  
+00000000000000000000000000000000000000000000000000000000000000000000000       
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col==n//2+1 or (col+row==n+1 and col>=n//2+1)or (row==col and row>=n//2+1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+      *     * 
+      *   *   
+      * *     
+      *       
+      * *     
+      *   *   
+      *     * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col==1 or (row==1 and col==4) or (row==2 and col==3) or (row==3 and col==2) or (row==5 and col==2) or (row==6 and col==3) or (row==7 and col==4):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*     *       
+*   *         
+* *           
+*             
+* *           
+*   *         
+*     *       
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col==1 or row==n:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*             
+*             
+*             
+*             
+*             
+*             
+* * * * * * * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if (col in (1,n-1) and row!=n)or (row in (1,n-1) and col!=n) or (row==col and row>=n//2+1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * *   
+*         *   
+*         *   
+*     *   *   
+*       * *   
+* * * * * *   
+            * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col in (1,n) or (row==col and row<=n//2+1) or (row+col==n+1 and row<=n//2+1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*           * 
+* *       * * 
+*   *   *   * 
+*     *     * 
+*           * 
+*           * 
+*           * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col in (1,n) or row==col:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*           * 
+* *         * 
+*   *       * 
+*     *     * 
+*       *   * 
+*         * * 
+*           * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col in (1,n) or row in (1,n):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+* * * * * * * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if (col in (1,n) and row not in(1,n)) or (row in (1,n) and col not in(1,n)):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+  * * * * *   
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+  * * * * *   
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col==1 or row==1 or row==n//2+1 or (col==n and row<=n//2+1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+*           * 
+*           * 
+* * * * * * * 
+*             
+*             
+*             
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col==1 or (row==1 and col!=n) or (col==n and row<=n//2 and row!=1) or (row==n//2+1 and col!=n):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * *   
+*           * 
+*           * 
+* * * * * *   
+*             
+*             
+*             
+'if (col==0 or col==4) and (row>0 and row<6) or (row==0 or row==6) and (col>0 and col<4) or( row==5 and col==2) or (col==4 and row==7)'
+n=7
+for row in range(8):
+    for col in range(8):
+        if (col==0 or col==4) and (row>0 and row<6) or (row==0 or row==6) and (col>0 and col<4) or ( row==5 and col==2) or (col==4 and row==7):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+  * * *         
+*       *       
+*       *       
+*       *       
+*       *       
+*   *   *       
+  * * *         
+        *       
+n=7 
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if (col in (1,n) and row not in(1,n)) or (row in (1,n) and col not in(1,n)) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+  * * * * *   
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+  * * * * *   
+ 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col==1 or row==1 or row==n//2+1 or (col==n and row<=n//2+1) or (row>=n//2+1 and col==row):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+*           * 
+*           * 
+* * * * * * * 
+*       *     
+*         *   
+*           * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col==1 or (row==1 and col!=n) or (row==n//2+1 and col!=n) or (col==n and row<=n//2  and row!=1) or (row>=n//2+1 and col==row):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * *   
+*           * 
+*           * 
+* * * * * *   
+*       *     
+*         *   
+*           * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or row==n//2+1 or (col==1 and row<=n//2+1) or (col==n and row>=n//2+1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+*             
+*             
+* * * * * * * 
+            * 
+            * 
+* * * * * * * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col==n//2+1 or row==1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+      *       
+      *       
+      *       
+      *       
+      *       
+      *       
+ 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if (col in(1,n) and row!=n) or (row==n and col not in (1,n)):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+  * * * * *   
+ 
+n=8
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if (((col==1 or col==5) and row<5) or (row==6 and col==3) or (row==5 and (col==2 or col==4))) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*       *       
+*       *       
+*       *       
+*       *       
+  *   *         
+    *           
+                
+                
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if col in (1,n) or (row==col and row>=n//2+1) or (row+col==n+1 and row>=n//2+1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*           * 
+*           * 
+*           * 
+*     *     * 
+*   *   *   * 
+* *       * * 
+*           * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row==col or row+col==n+1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*           * 
+  *       *   
+    *   *     
+      *       
+    *   *     
+  *       *   
+*           * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if (row==col and row<=n//2+1) or (row+col==n+1 and row<=n//2+1) or (col==n//2+1 and row>=n//2+1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*           * 
+  *       *   
+    *   *     
+      *       
+      *       
+      *       
+      *       
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or row+col==n+1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+          *   
+        *     
+      *       
+    *         
+  *           
+* * * * * * * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or col in (1,n):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+* * * * * * * 
+ 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or col in (1,n)or row==col:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+* *         * 
+*   *       * 
+*     *     * 
+*       *   * 
+*         * * 
+* * * * * * * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or col in (1,n)or row==col or row+col==n+1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+* *       * * 
+*   *   *   * 
+*     *     * 
+*   *   *   * 
+* *       * * 
+* * * * * * * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or col in (1,n)or row==col or row+col==n+1 or row==n//2+1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+* *       * * 
+*   *   *   * 
+* * * * * * * 
+*   *   *   * 
+* *       * * 
+* * * * * * * 
+n=9
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) or col in (1,n)or row==col or row+col==n+1 or row==n//2+1 or col==n//2+1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * * * 
+* *     *     * * 
+*   *   *   *   * 
+*     * * *     * 
+* * * * * * * * * 
+*     * * *     * 
+*   *   *   *   * 
+* *     *     * * 
+* * * * * * * * * 
+n=9
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if  row==col and row+col==n+1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+                  
+                  
+                  
+                  
+        *         
+                  
+                  
+                  
+                  
+n=9
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n) and col in (1,n) or row==col and row+col==n+1 :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*               * 
+                  
+                  
+                  
+        *         
+                  
+                  
+                  
+*               * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row in (1,n,n//2+1) and col in(1,n,n//2+1)  :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*     *     * 
+              
+              
+*     *     * 
+              
+              
+*     *     * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row>=col  :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+*             
+* *           
+* * *         
+* * * *       
+* * * * *     
+* * * * * *   
+* * * * * * * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row<=col  :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+  * * * * * * 
+    * * * * * 
+      * * * * 
+        * * * 
+          * * 
+            * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row+col<=n+1  :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+* * * * * *   
+* * * * *     
+* * * *       
+* * *         
+* *           
+*             
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row+col>=n+1  :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+            * 
+          * * 
+        * * * 
+      * * * * 
+    * * * * * 
+  * * * * * * 
+* * * * * * * 
+n=7
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row+col==n+1 and row<=n//2+1 or row==1 or (row==col and row<=n//2+1) :
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+* * * * * * * 
+  *       *   
+    *   *     
+      *       
+              
+              
+              
+ 
+ 
